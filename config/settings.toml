@@ -1,0 +1,29 @@
+[default]
+# Server mode: "python" for development, "binary" for production
+server_mode = "python"
+
+# Path to server binary (for production mode)
+binary_path = "rtllib-server"
+
+# Auto-start server when creating client
+auto_start = true
+
+# Server configuration
+[default.server]
+# If not specified, will auto-assign a free port
+host = "127.0.0.1"
+# port = <not set>  # When not set, will auto-assign a free port
+
+# Timeout settings (in seconds)
+[default.timeouts]
+startup = 20
+health_check = 10
+request = 30
+
+[development]
+# Development-specific settings
+server_mode = "python"
+
+[production]
+# Production-specific settings
+server_mode = "binary"
