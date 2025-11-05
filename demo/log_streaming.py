@@ -97,7 +97,7 @@ def main():
         modules = client.get_modules()
         print(f"   ✓ Found {len(modules)} module(s)")
         for mod in modules:
-            print(f"     - {mod['name']}: {mod['ports']} ports, {mod['instances']} instances")
+            print(f"     - {mod['name']}: {len(mod['ports'])} ports, {len(mod['instances'])} instances, {len(mod['nets'])} nets")
         time.sleep(0.5)
 
         # Get ports for a module

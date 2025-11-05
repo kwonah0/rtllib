@@ -54,7 +54,7 @@ def main():
         print("\n5. Getting modules...")
         modules = client.get_modules()
         for mod in modules:
-            print(f"   - {mod['name']}: {mod['ports']} ports, {mod['instances']} instances")
+            print(f"   - {mod['name']}: {len(mod['ports'])} ports, {len(mod['instances'])} instances, {len(mod['nets'])} nets")
 
         # Get ports for a module
         print("\n6. Getting ports for 'top_module'...")

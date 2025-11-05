@@ -40,9 +40,9 @@ def demonstrate_query(url: str):
     print("\n1. Simple Query:")
     query = gql("""
         query {
-            healthCheck {
+            health_check {
                 status
-                backendType
+                backend_type
             }
         }
     """)
@@ -54,11 +54,19 @@ def demonstrate_query(url: str):
     print("\n2. Query with nested fields:")
     query = gql("""
         query {
-            getModules {
+            modules {
                 name
                 file
-                ports
-                instances
+                ports {
+                    name
+                    direction
+                    width
+                }
+                instances {
+                    name
+                    module
+                    parent
+                }
             }
         }
     """)
@@ -70,7 +78,7 @@ def demonstrate_query(url: str):
     print("\n3. Query with arguments:")
     query = gql("""
         query GetPorts($moduleName: String!) {
-            getPorts(module: $moduleName) {
+            ports(module: $moduleName) {
                 name
                 direction
                 width
@@ -96,10 +104,10 @@ def demonstrate_mutation(url: str):
     print("\n1. Mutation - Read Verilog:")
     mutation = gql("""
         mutation ReadVerilogFile($path: String!) {
-            readVerilog(path: $path) {
+            read_verilog(path: $path) {
                 status
                 file
-                modulesFound
+                modules_found
             }
         }
     """)
@@ -147,7 +155,7 @@ async def demonstrate_subscription(ws_url: str, http_url: str):
         # Subscription for log streaming
         subscription = gql("""
             subscription {
-                logStream {
+                log_stream {
                     level
                     message
                     timestamp
@@ -168,7 +176,7 @@ async def demonstrate_subscription(ws_url: str, http_url: str):
                 # Mutation 실행해서 로그 생성
                 mutation = gql("""
                     mutation {
-                        readVerilog(path: "/test/design.v") {
+                        read_verilog(path: "/test/design.v") {
                             status
                         }
                     }
@@ -187,7 +195,7 @@ async def demonstrate_subscription(ws_url: str, http_url: str):
             async def collect_logs():
                 nonlocal count
                 async for result in session.subscribe(subscription):
-                    log = result.get("logStream", {})
+                    log = result.get("log_stream", {})
                     if log:
                         count += 1
                         print(f"  [{log['level']}] {log['message'][:50]}...")
