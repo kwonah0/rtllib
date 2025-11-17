@@ -2,6 +2,28 @@
 
 rtllib의 일반적인 사용 패턴 및 예제입니다.
 
+## 📥 예제 다운로드
+
+모든 예제는 독립 실행 가능한 Python 파일로 제공됩니다:
+
+- **개별 파일**: 아래 예제 파일을 클릭하여 다운로드
+- **전체 예제 (ZIP)**: [examples.zip 다운로드](https://github.com/kwonah0/rtllib/archive/refs/heads/main.zip) 후 `examples/` 폴더 압축 해제
+- **Git Clone**: `git clone https://github.com/kwonah0/rtllib.git` 후 `examples/` 폴더로 이동
+
+| 파일 | 설명 |
+|------|------|
+| [example_1_load_and_query.py](https://github.com/kwonah0/rtllib/blob/main/examples/example_1_load_and_query.py) | 설계 로드 및 쿼리 |
+| [example_2_analyze_ports.py](https://github.com/kwonah0/rtllib/blob/main/examples/example_2_analyze_ports.py) | 포트 인터페이스 분석 |
+| [example_3_hierarchy.py](https://github.com/kwonah0/rtllib/blob/main/examples/example_3_hierarchy.py) | 계층 구조 분석 |
+| [example_4_filters.py](https://github.com/kwonah0/rtllib/blob/main/examples/example_4_filters.py) | 필터 사용 |
+| [example_5_multiple_files.py](https://github.com/kwonah0/rtllib/blob/main/examples/example_5_multiple_files.py) | 여러 파일 |
+| [example_6_design_modification.py](https://github.com/kwonah0/rtllib/blob/main/examples/example_6_design_modification.py) | 설계 수정 |
+| [example_7_error_handling.py](https://github.com/kwonah0/rtllib/blob/main/examples/example_7_error_handling.py) | 오류 처리 |
+| [example_8_external_server.py](https://github.com/kwonah0/rtllib/blob/main/examples/example_8_external_server.py) | 외부 서버 |
+| [example_9_generate_report.py](https://github.com/kwonah0/rtllib/blob/main/examples/example_9_generate_report.py) | 리포트 생성 |
+
+자세한 내용은 [examples README](https://github.com/kwonah0/rtllib/blob/main/examples/README.md)를 참조하세요.
+
 ## 예제 1: 설계 로드 및 쿼리
 
 ```python

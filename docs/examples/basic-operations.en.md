@@ -2,6 +2,28 @@
 
 Common usage patterns and examples for rtllib.
 
+## 📥 Download Examples
+
+All examples are available as standalone Python files:
+
+- **Individual Files**: Click any example file below to download
+- **All Examples (ZIP)**: [Download examples.zip](https://github.com/kwonah0/rtllib/archive/refs/heads/main.zip) and extract the `examples/` folder
+- **Git Clone**: `git clone https://github.com/kwonah0/rtllib.git` and navigate to `examples/`
+
+| File | Description |
+|------|-------------|
+| [example_1_load_and_query.py](https://github.com/kwonah0/rtllib/blob/main/examples/example_1_load_and_query.py) | Load and query design |
+| [example_2_analyze_ports.py](https://github.com/kwonah0/rtllib/blob/main/examples/example_2_analyze_ports.py) | Analyze port interfaces |
+| [example_3_hierarchy.py](https://github.com/kwonah0/rtllib/blob/main/examples/example_3_hierarchy.py) | Hierarchy analysis |
+| [example_4_filters.py](https://github.com/kwonah0/rtllib/blob/main/examples/example_4_filters.py) | Filter usage |
+| [example_5_multiple_files.py](https://github.com/kwonah0/rtllib/blob/main/examples/example_5_multiple_files.py) | Multiple files |
+| [example_6_design_modification.py](https://github.com/kwonah0/rtllib/blob/main/examples/example_6_design_modification.py) | Design modification |
+| [example_7_error_handling.py](https://github.com/kwonah0/rtllib/blob/main/examples/example_7_error_handling.py) | Error handling |
+| [example_8_external_server.py](https://github.com/kwonah0/rtllib/blob/main/examples/example_8_external_server.py) | External server |
+| [example_9_generate_report.py](https://github.com/kwonah0/rtllib/blob/main/examples/example_9_generate_report.py) | Generate report |
+
+See the [examples README](https://github.com/kwonah0/rtllib/blob/main/examples/README.md) for more information.
+
 ## Example 1: Load and Query Design
 
 ```python
