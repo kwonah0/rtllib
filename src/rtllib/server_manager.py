@@ -4,6 +4,9 @@ import socket
 import subprocess
 import time
 import logging
+import atexit
+import signal
+import sys
 from pathlib import Path
 from typing import Optional
 import httpx
@@ -38,6 +41,17 @@ class ServerManager:
 
         self.process: Optional[subprocess.Popen] = None
         self._started = False
+
+        # Register cleanup handlers
+        atexit.register(self.stop)
+
+        # Register signal handlers (Unix/Linux only for SIGTERM)
+        try:
+            signal.signal(signal.SIGINT, self._signal_handler)
+            signal.signal(signal.SIGTERM, self._signal_handler)
+        except (AttributeError, ValueError):
+            # Windows doesn't support all signals, skip if not available
+            pass
 
     def find_free_port(self) -> int:
         """Find a free port on localhost.
@@ -85,6 +99,8 @@ class ServerManager:
                     self.host,
                     "--port",
                     str(self.port),
+                    "--idle-timeout",
+                    "300",  # 5 minutes
                 ]
             else:
                 # Try installed package
@@ -94,6 +110,8 @@ class ServerManager:
                     self.host,
                     "--port",
                     str(self.port),
+                    "--idle-timeout",
+                    "300",  # 5 minutes
                 ]
         elif self.server_mode == "binary":
             cmd = [
@@ -102,6 +120,8 @@ class ServerManager:
                 self.host,
                 "--port",
                 str(self.port),
+                "--idle-timeout",
+                "300",  # 5 minutes
             ]
         else:
             raise ValueError(f"Unknown server mode: {self.server_mode}")
@@ -232,6 +252,21 @@ class ServerManager:
             bool: True if server is running
         """
         return self._started and self.process and self.process.poll() is None
+
+    def _signal_handler(self, signum, frame):
+        """Handle termination signals.
+
+        Args:
+            signum: Signal number
+            frame: Current stack frame
+        """
+        logger.info(f"Received signal {signum}, stopping server...")
+        self.stop()
+        sys.exit(0)
+
+    def __del__(self):
+        """Destructor - ensure server is stopped when object is garbage collected."""
+        self.stop()
 
     def __enter__(self):
         """Context manager entry."""
