@@ -40,12 +40,8 @@ with Client() as client:
 pip install rtllib
 ```
 
-자세한 내용은 [설치 가이드](installation.md)를 참조하세요.
-
 ## 문서 구조
 
-- **[빠른 시작](quickstart.md)** - 5분 안에 시작하기
-- **[설치](installation.md)** - 설치 및 설정
 - **[명령어 개요](commands/overview.md)** - 모든 사용 가능한 명령어
 - **[쿼리](commands/queries.md)** - 읽기 전용 작업
 - **[뮤테이션](commands/mutations.md)** - 설계 수정 작업
@@ -126,7 +122,6 @@ ports: list[PortInfo] = client.get_ports("top")
 
 ## 다음 단계
 
-- 📚 [빠른 시작 가이드](quickstart.md) - 5분 안에 rtllib 배우기
 - 🔍 [쿼리 레퍼런스](commands/queries.md) - 모든 쿼리 명령어
 - ✏️ [뮤테이션 레퍼런스](commands/mutations.md) - 모든 수정 명령어
 - 📖 [타입 레퍼런스](commands/types.md) - 데이터 구조 이해하기

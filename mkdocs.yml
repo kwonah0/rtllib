@@ -49,8 +49,6 @@ plugins:
           build: true
           nav_translations:
             Home: 홈
-            Installation: 설치
-            Quick Start: 빠른 시작
             Commands: 커맨드
             Examples: 예제
             Overview: 개요
@@ -97,8 +95,6 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Installation: installation.md
-  - Quick Start: quickstart.md
   - Commands:
     - Overview: commands/overview.md
     - Queries: commands/queries.md

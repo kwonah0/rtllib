@@ -48,8 +48,6 @@ uv pip install rtllib
 
 ## Documentation Structure
 
-- **[Installation](installation.md)** - Setup and requirements
-- **[Quick Start](quickstart.md)** - Get started in 5 minutes
 - **[Commands](commands/overview.md)** - Complete command reference
   - [Queries](commands/queries.md) - Read design information
   - [Mutations](commands/mutations.md) - Modify design state
@@ -72,7 +70,6 @@ Automated testing of RTL designs with Python test frameworks
 
 ## Next Steps
 
-- 📚 Read the [Quick Start Guide](quickstart.md)
 - 📖 Browse [Command Reference](commands/queries.md)
 - 💡 Check out [Examples](examples/basic-operations.md)
 
