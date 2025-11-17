@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://kwonah0.github.io/rtllib/</loc>
+        <lastmod>2025-11-17</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kwonah0.github.io/rtllib/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://kwonah0.github.io/rtllib/ko/"/>
+    </url>
+    <url>
+        <loc>https://kwonah0.github.io/rtllib/commands/mutations/</loc>
+        <lastmod>2025-11-17</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kwonah0.github.io/rtllib/commands/mutations/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://kwonah0.github.io/rtllib/ko/commands/mutations/"/>
+    </url>
+    <url>
+        <loc>https://kwonah0.github.io/rtllib/commands/overview/</loc>
+        <lastmod>2025-11-17</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kwonah0.github.io/rtllib/commands/overview/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://kwonah0.github.io/rtllib/ko/commands/overview/"/>
+    </url>
+    <url>
+        <loc>https://kwonah0.github.io/rtllib/commands/queries/</loc>
+        <lastmod>2025-11-17</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kwonah0.github.io/rtllib/commands/queries/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://kwonah0.github.io/rtllib/ko/commands/queries/"/>
+    </url>
+    <url>
+        <loc>https://kwonah0.github.io/rtllib/commands/types/</loc>
+        <lastmod>2025-11-17</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kwonah0.github.io/rtllib/commands/types/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://kwonah0.github.io/rtllib/ko/commands/types/"/>
+    </url>
+    <url>
+        <loc>https://kwonah0.github.io/rtllib/examples/basic-operations/</loc>
+        <lastmod>2025-11-17</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kwonah0.github.io/rtllib/examples/basic-operations/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://kwonah0.github.io/rtllib/ko/examples/basic-operations/"/>
+    </url>
+    <url>
+        <loc>https://kwonah0.github.io/rtllib/ko/</loc>
+        <lastmod>2025-11-17</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://kwonah0.github.io/rtllib/ko/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kwonah0.github.io/rtllib/"/>
+    </url>
+    <url>
+        <loc>https://kwonah0.github.io/rtllib/ko/commands/mutations/</loc>
+        <lastmod>2025-11-17</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://kwonah0.github.io/rtllib/ko/commands/mutations/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kwonah0.github.io/rtllib/commands/mutations/"/>
+    </url>
+    <url>
+        <loc>https://kwonah0.github.io/rtllib/ko/commands/overview/</loc>
+        <lastmod>2025-11-17</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://kwonah0.github.io/rtllib/ko/commands/overview/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kwonah0.github.io/rtllib/commands/overview/"/>
+    </url>
+    <url>
+        <loc>https://kwonah0.github.io/rtllib/ko/commands/queries/</loc>
+        <lastmod>2025-11-17</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://kwonah0.github.io/rtllib/ko/commands/queries/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kwonah0.github.io/rtllib/commands/queries/"/>
+    </url>
+    <url>
+        <loc>https://kwonah0.github.io/rtllib/ko/commands/types/</loc>
+        <lastmod>2025-11-17</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://kwonah0.github.io/rtllib/ko/commands/types/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kwonah0.github.io/rtllib/commands/types/"/>
+    </url>
+    <url>
+        <loc>https://kwonah0.github.io/rtllib/ko/examples/basic-operations/</loc>
+        <lastmod>2025-11-17</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://kwonah0.github.io/rtllib/ko/examples/basic-operations/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kwonah0.github.io/rtllib/examples/basic-operations/"/>
+    </url>
+</urlset>
