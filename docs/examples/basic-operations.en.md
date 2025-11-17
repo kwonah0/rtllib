@@ -7,7 +7,7 @@ Common usage patterns and examples for rtllib.
 All examples are available as standalone Python files:
 
 - **Individual Files**: Click any example file below to download
-- **All Examples (ZIP)**: [Download examples.zip](https://github.com/kwonah0/rtllib/archive/refs/heads/main.zip) and extract the `examples/` folder
+- **All Examples (ZIP)**: [Download examples.zip](https://kwonah0.github.io/rtllib/examples.zip) - Contains all 9 example files and README
 - **Git Clone**: `git clone https://github.com/kwonah0/rtllib.git` and navigate to `examples/`
 
 | File | Description |

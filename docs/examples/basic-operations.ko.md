@@ -7,7 +7,7 @@ rtllib의 일반적인 사용 패턴 및 예제입니다.
 모든 예제는 독립 실행 가능한 Python 파일로 제공됩니다:
 
 - **개별 파일**: 아래 예제 파일을 클릭하여 다운로드
-- **전체 예제 (ZIP)**: [examples.zip 다운로드](https://github.com/kwonah0/rtllib/archive/refs/heads/main.zip) 후 `examples/` 폴더 압축 해제
+- **전체 예제 (ZIP)**: [examples.zip 다운로드](https://kwonah0.github.io/rtllib/examples.zip) - 9개 예제 파일과 README 포함
 - **Git Clone**: `git clone https://github.com/kwonah0/rtllib.git` 후 `examples/` 폴더로 이동
 
 | 파일 | 설명 |
