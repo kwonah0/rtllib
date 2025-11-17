@@ -1,0 +1,118 @@
+site_name: RTL Library Client - Command Reference
+site_description: GraphQL API Command Reference for rtllib Python SDK
+site_author: kwonah0
+site_url: https://kwonah0.github.io/rtllib/
+
+repo_name: kwonah0/rtllib
+repo_url: https://github.com/kwonah0/rtllib
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search
+  - i18n:
+      docs_structure: suffix
+      fallback_to_default: true
+      reconfigure_material: true
+      reconfigure_search: true
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: ko
+          name: 한국어
+          build: true
+          nav_translations:
+            Home: 홈
+            Installation: 설치
+            Quick Start: 빠른 시작
+            Commands: 커맨드
+            Examples: 예제
+            Overview: 개요
+            Queries: 쿼리
+            Mutations: 뮤테이션
+            Types: 타입
+            Basic Operations: 기본 작업
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: timeago
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - md_in_html
+  - def_list
+  - tables
+  - footnotes
+  - toc:
+      permalink: true
+      toc_depth: 3
+
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Quick Start: quickstart.md
+  - Commands:
+    - Overview: commands/overview.md
+    - Queries: commands/queries.md
+    - Mutations: commands/mutations.md
+    - Types: commands/types.md
+  - Examples:
+    - Basic Operations: examples/basic-operations.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/kwonah0/rtllib
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/rtllib/
+
+extra_css:
+  - stylesheets/extra.css
